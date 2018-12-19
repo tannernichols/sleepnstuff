@@ -1,0 +1,44 @@
+---
+title: "Results and Conclusion"
+---
+
+####Time to fall asleep predicted by SFG area
+```{r}
+#Linear relationship between time to fall asleep and SFG area
+summary(lm(PSQI_Min2Asleep[PSQI_Min2Asleep <= 81] ~ FS_L_Superiorfrontal_Area[PSQI_Min2Asleep <= 81] + Gender[PSQI_Min2Asleep <= 81]))
+summary(lm(PSQI_Min2Asleep[PSQI_Min2Asleep <= 81] ~ FS_R_Superiorfrontal_Area[PSQI_Min2Asleep <= 81] + Gender[PSQI_Min2Asleep <= 81]))
+```
+
+```{r}
+#Linear relationship between time to fall asleep and SFG area + WBV
+summary(lm(PSQI_Min2Asleep[PSQI_Min2Asleep <= 81] ~ FS_L_Superiorfrontal_Area[PSQI_Min2Asleep <= 81] + FS_BrainSeg_Vol[PSQI_Min2Asleep <= 81] + Gender[PSQI_Min2Asleep <= 81]))
+summary(lm(PSQI_Min2Asleep[PSQI_Min2Asleep <= 81] ~ FS_R_Superiorfrontal_Area[PSQI_Min2Asleep <= 81] + FS_BrainSeg_Vol[PSQI_Min2Asleep <= 81] + Gender[PSQI_Min2Asleep <= 81]))
+```
+
+```{r}
+#Linear relationship between time to fall asleep and WBV
+summary(lm(PSQI_Min2Asleep[PSQI_Min2Asleep <= 81] ~ FS_BrainSeg_Vol[PSQI_Min2Asleep <= 81] + Gender[PSQI_Min2Asleep <= 81]))
+```
+
+####Bad dreams predicted by hippocampus volume
+```{r}
+#Linear relationship between bad dreams and hippo volume
+summary(lm(PSQI_BadDream[PSQI_BadDream <= 2.6] ~ FS_L_Hippo_Vol[PSQI_BadDream <= 2.6] + Gender[PSQI_BadDream <= 2.6]))
+summary(lm(PSQI_BadDream[PSQI_BadDream <= 2.6] ~ FS_R_Hippo_Vol[PSQI_BadDream <= 2.6] + Gender[PSQI_BadDream <= 2.6]))
+```
+
+```{r}
+#Linear relationship between bad dreams and hippo volume + WBV
+summary(lm(PSQI_BadDream[PSQI_BadDream <= 2.6] ~ FS_L_Hippo_Vol[PSQI_BadDream <= 2.6] + FS_BrainSeg_Vol[PSQI_BadDream <= 2.6] + Gender[PSQI_BadDream <= 2.6]))
+summary(lm(PSQI_BadDream[PSQI_BadDream <= 2.6] ~ FS_R_Hippo_Vol[PSQI_BadDream <= 2.6] + FS_BrainSeg_Vol[PSQI_BadDream <= 2.6] + Gender[PSQI_BadDream <= 2.6]))
+```
+
+##Results
+Initial analysis revealed a strong linear relationship between both L and R SFG area and the time it takes to fall asleep (L: t=-2.711, p=0.00681; R: t = -2.735, p=0.00633) while controlling for sex. According to these results, participants with larger SFGs would have less trouble falling asleep than those with smaller SFGs. However, when regressions covaried a measure of Whole Brain Volume (WBV), the relationship between SFG area and time to fall asleep was reduced to statistical non-significance (L: t=-1.084, p=0.279; R: t=-1.127, p=0.260). Another regression was run to determine the relationship between WBV and time to fall asleep and a statistically significant correlation was discovered (t=-2.673, p=0.00762).
+The analysis on hippocampal volume and bad dreams showed no significant relationship for either side (L: t=1.114, p=0.265; R: t=0.697, p=0.4860) while controlling for sex. Unsurprisingly, this relationship was also non-significant when WBV was also covaried (L: t=-0.966, p=0.334; R: t=0.464, p=0.643).
+
+##Conclusion
+This analysis did not provide evidence for either hypothesis. For both the relationship between the SFG area and the time it takes to fall asleep and the hippocampus volume and the number of bad dreams suffered there was no meaningful statistically significant correlation. These results are a reminder that a measure of general brain size should always be included in models that involve smaller brain areas. If there had been no WBV in the model when analyzing time to fall asleep, it would have appeared that the SFG area had an effect. Instead, it was discovered that the volume of the entire brain determines how long it takes to fall asleep.
+These results make sense when one considers an absent control variable: age. This analysis was severely limited by the data available from basic Human Connectome Project (HCP) access, which restricts information such as race and age that could be used to identify subjects. Since the brain shrinks as one ages, and the elderly tend to have more trouble falling asleep, there should be a connection between brain size and time to fall asleep.
+The hippocampal analysis was also limited by available data. Only the anterior portion of the hippocampus is active in imagination, and the HCP did not segment their hippocampi into sub-areas. In addition, it is not currently known if any area of the brain is responsible for negative dreams specifically. The hippocampus, if anything, would be involved in all dreaming, good or bad, so a measure of only bad dreams would not account for all hippocampal activity.
+It is important to note that while increased volume or surface area in a section of brain can allow for more activity, the two are not necessarily related. Future research examining brain activity in the SFG and hippocampus during sleep problems would provide more thorough evidence for or against the hypotheses presented here.

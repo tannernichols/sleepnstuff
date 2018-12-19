@@ -1,0 +1,29 @@
+---
+title: "Introduction"
+---
+
+##Project Inspiration
+Sleep matters. A decent night’s sleep allows a body to focus attention, to remember details, and make better, healthier decisions (Alhola, 2007). Difficulty in sleeping will reduce energy levels and overall quality of life.  Yet sometimes it feels like our brains will do anything to make sure that sleep doesn’t happen. A person can spend hours lying in bed with every intention of sleeping, but instead reliving some stupid thing they said to a coworker and thinking against their will of all the ways that the situation could have been handled better. Even when a person manages to fall asleep, their brain can startle them awake with a nightmare.
+Why does the brain, the very organ that regulates sleep, seem to be so intent on keeping us from it? The human brain is not a unified collection of neurons with a single goal. It is composed of multiple sub-structures with processes that often find themselves in conflict. The hypothalamus can be trying its best to regulate our sleep cycle, but some nights it simply won’t be able to push past the networks trying to keep us conscious.
+The goal of this brief study is to examine the relationships between two areas of the brain and associated difficulties in sleeping. Since the causes of subconscious sleep problems are comparatively well-understood, it will focus on the internal conscious problems – the problems that we feel, but are created by our brain rather than external sources. Two of the most prominent of these are inability to fall asleep and bad dreams.
+Previous research has provided insight into which brain areas may be responsible. Much effort has gone into discovering which combination of brain areas manages our conscious experience, and many theories agree that the frontal-parietal area is involved (Boly et al., 2013). The Superior Frontal Gyrus (SFG) is central to this area and easily identified, making it a convenient representative of the consciousness network. Mander et al. (2016) have recently studied sleep deprivation through the lens of Alzheimer’s disease. They wanted to see whether difficulty sleeping was merely a symptom of Alzheimer’s or a factor that hastened neural decline. One of the first areas to go in Alzheimer’s, and an area that is key for memory consolidation which is important for conscious experience, is the hippocampus. The hippocampus has also been linked to the act of imagining for its ability to recreate past experiences and bring them together in novel situations (Zeider, 2016). The size of the hippocampus might then be related to the amount that we dream, for good or bad.
+If a larger superior frontal gyrus allows for a smoother transfer into sleep, then there will be an inverse relationship between SFG size and the time it typically takes to fall asleep. And if the hippocampus is involved with a negative dreaming experience, then there will be a positive relationship between hippocampal size and number of times woken due to nightmares.
+	
+##References
+Alhola, P. & Polo-Kantola, P. (2007). Sleep deprivation: Impact on cognitive performance. Neuropsychiatric Disease and Treatment, 3(5), 553-567.
+
+Boly, M., Seth, A.K., Wilke, M., Ingmundson, P., Baars, B., Laureys, S., Edelman, D.B. & Tsuchiya, N. (2013). Consciousness in humans and non-human animals: recent advances and future directions. Frontiers in Psychology, 4, A625:1-20
+
+Buysse, D.J., Reynolds, C.F., Monk, T.H., Berman, S.R., & Kupfer, D.J. (1989). The Pittsburgh Sleep Quality Index (PSQI): A new instrument for psychiatric research and practice. Psychiatry Research, 28(2), 193-213.
+
+Fischl B. (2012). FreeSurfer. NeuroImage, 62, 774-781.
+
+Mander, B.A., Winer, J.R., Jagust, W.J. & Walker, M.P. (2016). Sleep: A Novel mechanistic pathway, biomarker, and treatment target in the pathology of Alzheimer’s disease? Trends in Neuroscience, 39(8), 552-566.
+
+RStudio Team, (2016). RStudio: Integrated Development for R. RStudio, Inc., Boston, MA URL: http://www.rstudio.com/.
+
+Van Essen, D.C., Smith, S.M., Barch, D.M., Behrens, T.E.J., Yacoub, E. & Ugurbil, K. for the WU-Minn HCP Consortium. (2013). The WU-Minn Human Connectome Project: An overview. NeuroImage,  80, 62-79.
+
+Zeider, P. & Maguire, E.A. (2016). Anterior hippocampus: the anatomy of perception, imagination and episodic memory. Nature Reviews Neuroscience, 17, 173-182.
+
+
